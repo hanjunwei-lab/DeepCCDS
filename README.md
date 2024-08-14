@@ -11,7 +11,7 @@ This repository contains source code and data for **DeepCCDS**
 
 ## 2. Design of DeepCCDS
 
-![alt text](image/Overall_architecture.tif "Design of DeepCCDS")
+![alt text](image/Overall_architecture.jpg "Design of DeepCCDS")
 
 Figure 1: Overall architecture of DeepCCDS
 
