@@ -11,7 +11,7 @@ This repository contains source code and data for **DeepCCDS**
 
 ## 2. Design of DeepCCDS
 
-![alt text](image/Overall_architecture.svg "Design of DeepCCDS")
+![alt text](image/Overall_architecture.jpg "Design of DeepCCDS")
 
 Figure 1: Overall architecture of DeepCCDS
 
@@ -61,6 +61,8 @@ The file ``scDEAL.7z`` includes all the input datasets of ``Characterizing_CDS.R
 | [gene_identifiers_20191101](https://cellmodelpassports.sanger.ac.uk/downloads) | Correspondence of different identifiers of genes                                       |
 | [Census_allMon](https://cancer.sanger.ac.uk/census)                 | Cancer drivers from CGC                              |
 | [adjM_PPI](https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-022-01119-6
+        
+        
         
         )                           | PPI networks obtained from previous studies          |
 | [listp243](https://www.genome.jp/kegg/)                           | Kegg pathways and excluded all disease pathways                |
