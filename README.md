@@ -15,7 +15,7 @@ This repository contains source code and data for **DeepCCDS**
 
 Figure 1: Overall architecture of DeepCCDS
 
-## Installation
+## 3. Installation
 
 **DeepCCDS** relies on [R (version 4.3.1)](https://cran.r-project.org/bin/windows/base/old/4.3.1/) and [Python (version 3.10.12)](https://www.python.org/downloads/release/python-31012/) environments. Before using DeepCCDS, you must set up these two environments and install some necessary packages.
 
@@ -36,14 +36,14 @@ conda install numpy pandas scipy scikit-learn pytorch
 ```
 
 
-## 3. Usage
+## 4. Usage
 
 The implemention of **DeepCCDS** framework is divided into two main parts: 
 
 - **Part I**: Characterizing cancer driver signals as pathway representations through a prior knowledge network.
 - **Part II**: The complete training stage, in which the entire DeepCCDS framework undergoes end-to-end training.
 > We have made available all the code necessary to execute **DeepCCDS** in this GitHub repository. Please ensure that you replace the input data paths in the code with your own storage locations.
-### 3.1. Implemention of Part I
+### 4.1. Implemention of Part I
 **1. Code**: The code used to implement **Part I** is in the file "[Characterizing_CDS.R](code/Characterizing_CDS.R)" which located at folder ``code/``. This file encompasses the original data processing, execution of the random walk algorithm and enrichment analysis.
 
 **2. Data**: The datasets used to implement **Part I** can be downloaded from the ``scDEAL.7z`` link:
@@ -63,7 +63,7 @@ The file ``scDEAL.7z`` includes all the input datasets of ``Characterizing_CDS.R
 
 **3. Output**: The final output of the file ``Characterizing_CDS.R`` is a pathway activity matrix that is used for subsequent training of the complete model.
 
-### 3.2. Implemention of Part II  
+### 4.2. Implemention of Part II  
 
 **1. Code**: The complete training code for **DeepCCDS** is in the file ``main_DeepCCDS.ipynb`` which located at folder ``code/``. The file include some tunable parameters.  
 
@@ -93,7 +93,7 @@ The file ``scDEAL.7z`` includes all the input datasets of ``Characterizing_CDS.R
 
 **3. Output**: Get the best trained model. The models used in this paper are located at folder ``model/``.
 
-## 4. Feature attribution analysis
+## 5. Feature attribution analysis
 
 To explore the relationship between each cell embedded features and drug sensitivity, we employed the **Integrated Gradients (IG)** method ([https://doi.org/10.48550/arXiv.1703.01365](https://doi.org/10.48550/arXiv.1703.01365)). **IG** attributes the model's prediction for its input features by computing gradients for each input and measures the change in the output based on the small changes in the input. We calculated the average attribution of features across all samples to represent the global importance, termed the **IG score**. The calculation was performed through the ``IntegratedGradients`` class from the Python ``Captum`` library.
 
