@@ -46,8 +46,8 @@ The implemention of **DeepCCDS** framework is divided into two main parts:
 ### 4.1. Implemention of Part I
 **1. Code**: The code used to implement **Part I** is in the file "[Characterizing_CDS.R](code/Characterizing_CDS.R)" which located at folder ``code/``. This file encompasses the original data processing, execution of the random walk algorithm and enrichment analysis.
 
-**2. Data**: The datasets used to implement **Part I** can be downloaded from the ``scDEAL.7z`` link:
-[Click here to download scDEAL.zip from google drive](https://drive.google.com/file/d/1egI0B5YiDrHQz-4jiWClfinQqVqNbvF-/view?usp=drive_link)
+**2. Data**: The datasets used to implement **Part I** can be downloaded from the ``Characterizing_CDS.7z`` link:
+[Click here to download Characterizing_CDS.7z from google drive](https://drive.google.com/file/d/1egI0B5YiDrHQz-4jiWClfinQqVqNbvF-/view?usp=drive_link)
 
 The file ``scDEAL.7z`` includes all the input datasets of ``Characterizing_CDS.R``:
 
@@ -58,7 +58,9 @@ The file ``scDEAL.7z`` includes all the input datasets of ``Characterizing_CDS.R
 | [rnaseq_tpm_20220624](https://cellmodelpassports.sanger.ac.uk/downloads)                           | Cell line transcription information of GDSC                              |
 | [gene_identifiers_20191101](https://cellmodelpassports.sanger.ac.uk/downloads) | Correspondence of different identifiers of genes                                       |
 | [Census_allMon](https://cancer.sanger.ac.uk/census)                 | Cancer drivers from CGC                              |
-| [adjM_PPI](https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-022-01119-6)                           | PPI networks obtained from previous studies          |
+| [adjM_PPI](https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-022-01119-6
+        
+        )                           | PPI networks obtained from previous studies          |
 | [listp243](https://www.genome.jp/kegg/)                           | Kegg pathways and excluded all disease pathways                |
 
 **3. Output**: The final output of the file ``Characterizing_CDS.R`` is a pathway activity matrix that is used for subsequent training of the complete model.
