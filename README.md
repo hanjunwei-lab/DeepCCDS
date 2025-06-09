@@ -58,7 +58,9 @@ The file ``Characterizing_CDS.7z`` includes all the input datasets of ``Characte
 | [rnaseq_tpm_20220624](https://cellmodelpassports.sanger.ac.uk/downloads)                           | Cell line transcription information of GDSC                              |
 | [gene_identifiers_20191101](https://cellmodelpassports.sanger.ac.uk/downloads) | Correspondence of different identifiers of genes                                       |
 | [Census_allMon](https://cancer.sanger.ac.uk/census)                 | Cancer drivers from CGC                              |
-| [adjM_PPI](https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-022-01119-6)                           | PPI networks obtained from previous studies          |
+| [adjM_PPI](https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-022-01119-6
+        
+        )                           | PPI networks obtained from previous studies          |
 | [listp243](https://www.genome.jp/kegg/)                           | Kegg pathways and excluded all disease pathways                |
 
 **3. Output**: The final output of the file ``Characterizing_CDS.R`` is a pathway activity matrix that is used for subsequent training of the complete model.
@@ -95,7 +97,11 @@ The file ``Characterizing_CDS.7z`` includes all the input datasets of ``Characte
 
 ## 5. Feature attribution analysis
 
-To explore the relationship between each cell embedded features and drug sensitivity, we employed the **Integrated Gradients (IG)** method ([https://doi.org/10.48550/arXiv.1703.01365](https://doi.org/10.48550/arXiv.1703.01365)). **IG** attributes the model's prediction for its input features by computing gradients for each input and measures the change in the output based on the small changes in the input. We calculated the average attribution of features across all samples to represent the global importance, termed the **IG score**. The calculation was performed through the ``IntegratedGradients`` class from the Python ``Captum`` library.
+To explore the relationship between each cell embedded features and drug sensitivity, we employed the **Integrated Gradients (IG)** method ([https://doi.org/10.48550/arXiv.1703.01365
+        
+        ](https://doi.org/10.48550/arXiv.1703.01365
+        
+        )). **IG** attributes the model's prediction for its input features by computing gradients for each input and measures the change in the output based on the small changes in the input. We calculated the average attribution of features across all samples to represent the global importance, termed the **IG score**. The calculation was performed through the ``IntegratedGradients`` class from the Python ``Captum`` library.
 
 Install the package:
 
@@ -109,3 +115,9 @@ The code for calculating **IG score** is in the file ``feature_attribution.ipynb
 We provide the code and example data for reproducing the performance evaluation figures in the folder "[Reproduce_figures](Reproduce_figures/)". The complete data underlying all major results can be downloaded from the ``Data_of_maior_figures.7z`` link:
 [Click here to download Data_of_maior_figures.7z from google drive](https://drive.google.com/file/d/1afiiz3pIy8eddfFqgcyceRVmRd-WINam/view?usp=drive_link)
 
+## 6. Citation
+These codes and data are intended for research use only.
+
+If you use DeepCCDS or these codes in your publication, please cite the paper:
+
+Wu J, Lai J, Zhao X, Wang Z, Zhang Y, Wang L, Su Y, He Y, Li S, Jiang Y, Han J. DeepCCDS: Interpretable Deep Learning Framework for Predicting Cancer Cell Drug Sensitivity through Characterizing Cancer Driver Signals. Adv Sci (Weinh). 2025 May 21:e2416958. https://doi.org/10.1002/advs.202416958
