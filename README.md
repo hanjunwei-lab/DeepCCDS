@@ -115,7 +115,7 @@ The code for calculating **IG score** is in the file ``feature_attribution.ipynb
 We provide the code and example data for reproducing the performance evaluation figures in the folder "[Reproduce_figures](Reproduce_figures/)". The complete data underlying all major results can be downloaded from the ``Data_of_maior_figures.7z`` link:
 [Click here to download Data_of_maior_figures.7z from google drive](https://drive.google.com/file/d/1afiiz3pIy8eddfFqgcyceRVmRd-WINam/view?usp=drive_link)
 
-## 6. Citation
+## 7. Citation
 These codes and data are intended for research use only.
 
 If you use DeepCCDS or these codes in your publication, please cite the paper:
